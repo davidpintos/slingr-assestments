@@ -1,4 +1,9 @@
-# Semantic markup
+
+## Final Mockup With Solution Here:
+
+[FIGMA MOCKUP](https://www.figma.com/design/5ahsjEqWTfRM4DAdexV8As/ADP-Mockup?node-id=0-1&t=AO4gOU9XPBGCZ4Lk-1)
+
+# Test Details - Semantic markup
 
 ## Scenario
 
@@ -14,7 +19,3 @@ how it aids the user.
 - Feel free to use your drawing tool of choice (Paint, Photoshop etc) to draw on the mock-up provided
 - The elements should be those which would provide semantic meaning and allow the user to find content on the page easily
 - Any notes can either be included on the mock-up or in a separate file
-
-## Final Mockup Here:
-
-[FIGMA MOCKUP](https://www.figma.com/design/5ahsjEqWTfRM4DAdexV8As/ADP-Mockup?node-id=0-1&t=AO4gOU9XPBGCZ4Lk-1)
