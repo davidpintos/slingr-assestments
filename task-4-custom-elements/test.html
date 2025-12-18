@@ -21,7 +21,7 @@
       window.addEventListener('DOMContentLoaded', () => {
           console.log("Starting tests...");
 
-          // Test 1: Component is defined
+          // It checks component is defined
           testCondition(customElements.get("adp-status-widget"), "Component is defined");
 
           // Setup
@@ -29,14 +29,14 @@
           document.body.appendChild(adpStatus);
           const shadow = adpStatus.shadowRoot;
 
-          // Test 2: Default value
+          // It checks default value is fine
           const widgetValue = shadow.querySelector(".value");
           testCondition(
             widgetValue && widgetValue.textContent === "0",
             "default value is 0"
           );
 
-          // Test 3: Default label
+          // It checks default label is right
           const widgetLabel = shadow.querySelector(".label");
           testCondition(
             widgetLabel && widgetLabel.textContent === "Label",
@@ -48,19 +48,19 @@
           adpStatus.setAttribute("label", "Tasks");
           adpStatus.setAttribute("status", "Rejected");
 
-          // Test 4: Value update
+          // It checks the value is updated properly
           testCondition(
             shadow.querySelector(".value").textContent === "10",
             "value updates when attribute changes"
           );
 
-          // Test 5: Status text update
+          // It checks the status text is updated properly
           testCondition(
             shadow.querySelector(".status-text").textContent === "Rejected",
             "Status text changed"
           );
 
-          // Test 6: Icon logic
+          // It checks the icon shown is the right one
           testCondition(
             shadow.querySelector(".icon").textContent === "!",
             "Rejected status uses correct icon"

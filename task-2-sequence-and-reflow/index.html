@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADP Dashboard Mockup</title>
+    <title>ADP Dashboard - Final Version</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
 <body>
     <header class="top-header">
         <div class="header-left">
@@ -14,27 +15,16 @@
             <span class="brand">ADP</span>
         </div>
         <div class="header-right">
-            <i class="fa-regular fa-bell icon"></i>
-            <div class="avatar" role="img" aria-label="User Avatar">BN</div>
+            <i class="fa-regular fa-bell"></i>
+            <div class="avatar flex-center" role="img" aria-label="User Avatar">BN</div>
         </div>
     </header>
 
     <div class="main-wrapper">
         
         <aside class="sidebar">
-            <nav class="nav-group" aria-label="Personal menu">
-                <div class="nav-title"><i class="fa-solid fa-chevron-up"></i> Me</div>
-                <ul class="nav-list">
-                    <li><a href="#">My details</a></li>
-                    <li><a href="#">Performance</a></li>
-                    <li><a href="#" class="active" aria-current="page">Learning</a></li>
-                    <li><a href="#">Pay and statements</a></li>
-                    <li><a href="#">Leave and absence</a></li>
-                </ul>
-            </nav>
-
             <nav class="nav-group" aria-label="Team menu">
-                <div class="nav-title"><i class="fa-solid fa-chevron-down"></i> My team</div>
+                <div class="nav-title">My team</div>
             </nav>
         </aside>
 
@@ -43,31 +33,34 @@
             <main class="content-area">
                 <header class="page-head">
                     <h1>Learning</h1>
-                    <p>Here you can view upcoming training, view training history and search for courses in the library.</p>
+                    <p>Manage your upcoming training, history, and course search.</p>
                 </header>
 
                 <div class="dashboard-grid">
                     <section class="card main-card" aria-labelledby="training-title">
                         <h2 id="training-title">My next training</h2>
                         <div class="placeholder">
-                            <i class="fa-solid fa-graduation-cap icon"></i>
-                            No training planned yet
+                            <p>No training planned yet</p>
                         </div>
                     </section>
 
                     <section class="card" aria-labelledby="search-title">
                         <h2 id="search-title">Take a course</h2>
-                        <div class="placeholder">Search bar placeholder...</div>
+                        <div class="placeholder">
+                            <p>Search for courses...</p>
+                        </div>
                     </section>
 
                     <section class="card" aria-labelledby="history-title">
                         <h2 id="history-title">My training history</h2>
-                        <div class="placeholder">View completed courses</div>
+                        <div class="placeholder">
+                            <p>View completed courses</p>
+                        </div>
                     </section>
                 </div>
             </main>
 
-            <footer>
+            <footer class="main-footer">
                 <div class="footer-info">
                     <span>iHCM © 2024 ADP</span>
                     <span>Last login: Thu 05 Sep 2024</span>
@@ -82,7 +75,6 @@
         </div>
     </div>
     <script>
-        // For handling menu side bar
         const btn = document.querySelector('.menu-btn');
         const sidebar = document.querySelector('.sidebar');
 
