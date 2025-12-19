@@ -59,13 +59,14 @@ body {
 }
 
 .sidebar {
+    display: none; /* Mobile hidden by default */
     width: 260px;
     background: var(--green-light);
     padding-top: 1rem;
+    padding-left: 1rem;
     overflow-y: auto;
-    display: none; /* Mobile hidden by default */
 }
-
+.nav-items { list-style-type: none; }
 .content-wrapper { display: flex; flex-direction: column; flex: 1; min-width: 0; }
 .content-area { flex: 1; padding: 2rem; overflow-y: auto; background: white; }
 
